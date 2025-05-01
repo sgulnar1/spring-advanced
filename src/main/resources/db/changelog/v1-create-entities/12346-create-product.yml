@@ -1,0 +1,15 @@
+databaseChangeLog:
+  - changeSet:
+      id: 12346
+      author: gulnar
+      changes:
+        - createTable:
+            tableName: products
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+              - column:
+                  name: name
+                  type: varchar

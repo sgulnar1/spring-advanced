@@ -1,0 +1,8 @@
+databaseChangeLog:
+  - changeSet:
+      id: 123456-07
+      author: GGG
+      changes:
+        - addPrimaryKey:
+            tableName: products
+            columnNames: id

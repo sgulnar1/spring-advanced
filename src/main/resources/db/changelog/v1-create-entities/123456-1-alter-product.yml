@@ -1,0 +1,12 @@
+databaseChangeLog:
+  - changeSet:
+      id: 123456-1
+      author: guln
+      changes:
+        - addColumn:
+            tableName: products
+            columns:
+              - column:
+                  name: description
+                  type: varchar
+

@@ -1,0 +1,29 @@
+databaseChangeLog:
+  - changeSet:
+      id: 20250501-02
+      author: Gul
+      changes:
+        - createTable:
+            tableName: categories
+            columns:
+              - column:
+                  name: id
+                  type: int
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: category_id_pk
+              - column:
+                  name: name
+                  type: varchar
+                  constraints:
+                    nullable: false
+                    unique: true
+                    uniqueConstraintName: category_id_unique
+              - column:
+                  name: product_id
+                  type: int
+                  constraints:
+                    foreignKeyName: product_id_fk
+                    referencedTableName: products
+                    referencedColumnNames: id
+                    deleteCascade: false

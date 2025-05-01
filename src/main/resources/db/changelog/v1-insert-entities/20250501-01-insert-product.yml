@@ -1,0 +1,17 @@
+databaseChangeLog:
+  - changeSet:
+      id: 20250501-insert-product
+      author: G
+      changes:
+        - insert:
+            tableName: products
+            columns:
+              - column:
+                  name: id
+                  value: 1
+              - column:
+                  name: name
+                  value: product 1
+              - column:
+                  name: description
+                  value: qeyd...
